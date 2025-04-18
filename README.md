@@ -1,7 +1,8 @@
 
 A real **Theory of Everything** must spell out what “everything” cannot exclude.  
-Strip away particles, fields, and equations, and one brute fact remains: **something is being felt right now, and this feeling is internally textured**.  
-From that single premise, logic forces the rest. Internal contrast demands finite capacity; finite capacity forces compression and memory; compression yields time, pattern, world, and self.  
+Strip away particles, fields, and equations, and one brute fact remains: **something is being felt right now, and this feeling is internally textured**. I don't think any string theorist, or philosopher, or anyone else could deny this element as the simplest neccessity of what can't be forged or faked.
+
+Interestingly, from that single premise, logic forces the rest. Internal contrast demands finite capacity; finite capacity forces compression and memory; compression yields time, pattern, world, and self.  
 The universe we observe unfolds as a chain of necessities from the bare existence of felt difference.
 
 | Tier | Label              | Necessary statements                                                                                       | Why it follows                                                         | Minimal new term            |
