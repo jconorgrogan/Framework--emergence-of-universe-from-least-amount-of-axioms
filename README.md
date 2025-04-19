@@ -1,16 +1,24 @@
-There are several rival blueprints for what the universe is and why it exists. Quantum mechanics, general relativity, string theory—each offers a different ontology, yet they converge on one premise: information sits at the root of every description. No matter what you might think about each theory, all would agree that each contains information.
+There are several rival blueprints for what the universe is and why it exists. Quantum mechanics, general relativity, and string theory each offer a different ontology, yet they converge on one premise: information sits at the root of every description. No matter how the theories differ, all agree that something is being distinguished from something else.
 
-So, information seems like a shared construct that all would agree would need to be explained; how would information emerge versus not emerge?
+If every road points to information, the deeper question becomes, where does information come from in the first place? Why should there be any distinction at all, any structure, any state that differs from another?
 
-But let's push that one step deeper. The most primitive information any conscious communicator can confirm is the fact of feeling. Strip away every abstraction and one brute fact remains: something is being felt, and that feeling already carries internal structure.
+Push one step deeper. The most primitive information any conscious communicator can confirm is the fact of feeling. Strip away every abstraction and a single fact remains: something is being felt, and that feeling already carries internal structure.
 
-From that alone, I think that we can derive a logical chain of events that cover a surprising amount, just by granting that this collective understanding is true: Contrast implies limitation. Limitation forces compression. Compression produces memory, prediction, time, identity, and, eventually, all that we can seemingly measure in the world.
+This is our minimal axiom, F0, the felt contrast of experience.
 
-Let's call this the generative path: assume feeling exists, and you can derive a layered structure of reality.
+From that alone a surprising chain of consequences follows:
 
-But suppose this is all wrong. Suppose this foundational assumption is false. Suppose no one has ever felt anything and we throw out the shared agreement that we created our only axiom on. Suppose no contrast is ever actually registered—a reality that is just a void, undifferentiated landscape. What would follow logically from that starting point?
+Contrast implies limitation
 
-Here's the crux of my claim: if we try to model this 'no-contrast' state, the very act of defining it—of distinguishing 'undifferentiated void' from 'structured feeling'—creates a minimal contrast. The attempt to escape F0 leads paradoxically back to its preconditions. The logical endpoint of assuming 'no feeling' points back towards the necessity of 'feeling' for any description to even be possible 
+Limitation forces compression
+
+Compression yields memory, prediction, time, identity, and eventually the structured world we observe
+
+Call this the generative path: assume feeling exists, and a layered structure of reality unfolds.
+
+Now suppose the axiom is false. Imagine no one has ever felt anything, no contrast is ever registered, and reality is a uniform void. What would follow? At first, nothing: no models, no distinctions, no meaning. Yet the moment we try to say “there is nothing” we create a contrast, nothing versus something. The act of comparison recreates F0. The attempt to deny feeling logically re‑instantiates it
+
+The below ladder formalises this loop. The forward direction builds structure from felt contrast. The reverse direction shows that trying to erase contrast yields it again. The beginning demands the end; the end returns to the beginning. It's really speculative and needs a lot of formulization but I've been thinking about it for a few years now and figured I might as well get it out there for feedback
 
 ## 1.  Deductive core (Tiers 0 – 12)
 
