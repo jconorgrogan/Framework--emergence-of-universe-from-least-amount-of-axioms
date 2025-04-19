@@ -102,4 +102,9 @@ The ladder is a self-locking circle: F0 → … → T24 → T25 → F0.
 * Proofs for Lemmas 1–7, MI, ToM, R1*, R3*, G, CI, QS, NO and Theorem MIN  
 * Mapping of Hardy (2001, 2011) and Chiribella–D’Ariano–Perinotti (2010) axioms to MDL predicates  
 * Definitions of SUR and the MDL cost function  
-* Sketch derivations for speculative tiers T13–T23  
+* Sketch derivations for speculative tiers T13–T23
+
+#TO-DO
+
+As currently presented, MDL/SUR appears before the loop closes (explicitly driving T3a onwards) and is used implicitly in the reverse path logic ("costs too much")- In this view, MDL/SUR is a fundamental "law of information physics" that governs how systems handle distinctions under constraints (like T2). The loop structure (F0 → T24 → T25 → F0) is a consequence or a stable configuration under these laws. The laws enable the loop; the loop doesn't create the laws... But Perhaps MDL/SUR isn't a fundamental law but rather the description of the winning strategy for information systems trying to persist and self-organize under the conditions set by F0 (contrast) and T2 (bottleneck). Or perhaps these MUR/SUR components emerge because of the forward + backward dynamics.
+
