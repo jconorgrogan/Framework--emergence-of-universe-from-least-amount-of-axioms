@@ -1,12 +1,14 @@
-If a Theory of Everything is to live up to its name, it has to account for what cannot be excluded.
+There are several rival blueprints for what the universe is and why it exists. Quantum mechanics, general relativity, string theory—each offers a different ontology, yet they converge on one premise: information sits at the root of every description.
 
-Strip away all abstraction, and only one brute fact remains: something is being felt, and that feeling is internally structured.
+Push that one step deeper. The most primitive information any conscious communicator can confirm is the fact of feeling. Strip away every abstraction and one brute fact remains: something is being felt, and that feeling already carries internal structure.
 
-No equation or ontology escapes this. It is the minimal undeniable datum: the felt contrast of experience.
+No equation escapes this datum. The felt contrast of experience is the minimal, undeniable starting point. From it everything else follows:
 
-From that alone, everything else follows. Contrast implies limitation, limitation demands compression, and compression yields memory, time, identity, and world.
+Contrast implies limitation.
 
-What we call "reality" could be just the necessary closure of this system which is structure unfolding from the bare existence of felt difference. It seems a bit crazy but the logic seems sound; LMK if I'm missing anything obvious
+Limitation forces compression.
+
+Compression produces memory, prediction, time, identity, and world. Here is a brief chain of logic; It seems a bit crazy but the logic seems sound at first blush; LMK if I'm missing anything obvious
 
 
 ## 1.  Deductive core (Tiers 0 – 12)
