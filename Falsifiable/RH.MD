@@ -1,94 +1,119 @@
 INFORMATIONAL CONSTRUCTIVISM ⇒ RIEMANN HYPOTHESIS
 Weirdly enough RH gives a path to falsification of IC here
------------------------------------------------------------
-
-Goal
-    Show from IC that every non‑trivial zero of ζ(s) satisfies Re s = ½,
-    making RH a falsifiable IC prediction.
+===========================================================
+------------------------------------------------------------
+0  Notation
+------------------------------------------------------------
+  s = σ + it  (0 < σ < 1, t ∈ ℝ)  
+  ζ(s) Riemann zeta   Λ(n) von Mangoldt  
+  Z(σ)=Σ_p p^−σ (↓, strictly convex on (0, 1))
 
 ------------------------------------------------------------
-1.  IC Premises
+1  IC Premises
 ------------------------------------------------------------
-P1  (Primes = irreducible contrasts)
-    Each prime is a minimal, non‑decomposable Δ_gen distinction.
+P1  Primes = irreducible Δ_gen contrasts.  
+P2  SUR (shortest‑usable‑representation) minimises **average** description
+    length of all distinction streams.  
+P3  Weighting a factor by n^−σ packages prime density in ζ(s).
 
-P2  (Global SUR equilibrium)
-    The system minimises total description length by balancing
-       projection (new distinctions)  vs  recursion (code reuse).
-
-P3  (ζ as density generator)
-    ζ(s)=Σ n⁻ˢ = ∏ (1−p⁻ˢ)⁻¹ packages prime‑distinction density when
-    each step is penalised by cost exponent s = σ + i t.
+σ‑interpretation:  
+    σ < ½ recursion‑heavy • σ > ½ projection‑heavy • σ = ½ equilibrium.
 
 ------------------------------------------------------------
-2.  Key IC Mapping
+2  SUR arithmetic coder
 ------------------------------------------------------------
-σ = Re s   → compression‑bias exponent
-    σ>½  : projection dominates → wasted long codes
-    σ<½  : recursion dominates  → redundancy bloat
-    σ=½  : projection = recursion → global MDL minimum
 
-t = Im s   → reversible phase (cost‑free header)
+### Lemma 1 (standard; Cover–Thomas §13.3)  
+For the stationary source \(P_\sigma(p)=p^{-\sigma}/Z(σ)\),
+arithmetic coding produces
+\[
+\mathbb E_\sigma[\ell_N]=
+    N\,H(P_\sigma)+2,
+\quad
+H(P_\sigma)=\log Z(σ)+σ\,Z'/Z.      (2.1)
+\]
 
-A non‑trivial zero ζ(s)=0 is perfect cancellation of projection
-and recursion contributions at that (σ,t).
+### Open Lemma 2 (IC coding assumption)  
+*Claim.*   IC’s equilibrium potential uses only the
+   **“surprise” part \(\log Z(σ)\)**, while the term  
+   \(\sigma Z'/Z\) is an internal slack that does not affect global cost.
 
-------------------------------------------------------------
-3.  Concrete Cost Functional
-------------------------------------------------------------
-    L(σ,t) = −Re log ζ(σ+it) + β log Z(σ),      0<σ<1,  β∈(0,1)
-    Z(σ)   = Σ_{p} p^−σ
+*Status.*   This is an IC postulate—not yet a theorem.  
+   It can be justified if one shows that the σ Z′/Z term cancels in a
+   Kolmogorov‑style two‑part code when the observer re‑normalises its
+   internal state.  A full proof is still missing.
 
-  −Re log ζ  : projection cost (unreused primes)
-   β log Z   : recursion penalty (over‑reuse of small primes)
+**Provisional definition**
 
-Gradients
-    ∂σL = −Re(ζ′/ζ) + β Z′/Z                        (1)
-    ∂tL = −Im(ζ′/ζ)                                 (2)
+\[
+L(σ,t):= -\Re\log ζ(σ+it)+\log Z(σ).                (2.2)
+\]
 
-Strict convexity in σ
-    ∂²σL = Σ Λ(n)² n^−2σ + β Z″/Z  > 0  on 0<σ<1    (3)
-
-------------------------------------------------------------
-4.  Lemmas
-------------------------------------------------------------
-Lemma A  (t‑stationary ⇒ ζ‑zero)
-    For σ≠½, t↦log|ζ(σ+it)| is strictly convex between zeros (Littlewood).
-    Thus ∂tL=0 ⇒ ζ=0  (and similarly at σ=½).
-
-Lemma B  (ζ‑zero ⇒ σ=½)
-    For a zero s₀=σ₀+it₀, integrate (1) around a small rectangle Γ:
-        ∮Γ ∂σL dσ
-          = −∮Γ Re(ζ′/ζ) dσ + β∮Γ Z′/Z dσ.
-    Z′/Z analytic ⇒ second integral → 0.
-    ζ′/ζ pole residue 1 ⇒ first integral = ±π (right/left edges).
-    Vanishes only if pole centred horizontally ⇒ σ₀ = ½.
-
-Lemma C  (σ‑stationary uniqueness)
-    By (3) L is strictly convex in σ ⇒ at most one σ with ∂σL=0 for
-    each t.
+Everything after §3 is *conditional* on Open Lemma 2.
 
 ------------------------------------------------------------
-5.  Main Theorem (RH inside IC)
+3  Gradients & convexity  (conditional on 2.2)
 ------------------------------------------------------------
-    ∇L = 0  → (Lemma A) ζ=0  → (Lemma B) σ=½.
-    With Lemma C, every non‑trivial zero lies on σ=½.
+\[
+∂_\sigma L=-\Re\frac{ζ'}{ζ}+\frac{Z'}{Z},\qquad
+∂_t L=-\Im\frac{ζ'}{ζ}.
+\]
+
+Using  
+\( -ζ''/ζ-(ζ'/ζ)^2 = Σ Λ(n)^2 n^{-2σ}>(2σ-1)^{-2}\)
+and \(Z''/Z>0\):
+
+\[
+∂^2_{\sigma\sigma}L>(2σ-1)^{-2}>0\;(0<σ<1).          (3.1)
+\]
+⇒ L is **strictly convex in σ**.
 
 ------------------------------------------------------------
-6.  Falsifiability
+4  Rectangle step (geometry of ζ′/ζ)
 ------------------------------------------------------------
-A single confirmed zero with σ≠½ breaks Lemma B, defeating SUR
-equilibrium and falsifying this incarnation of IC.
+
+### Fact (Titchmarsh §9.7)  
+For a rectangle Γε around any non‑trivial zero  
+\(I_+(ε)-I_-(ε)=2π\), where  
+\(I_\pm(ε)=\int_{-\eta}^{\eta}\Re ζ'/ζ(σ_0\!\pm\!ε+it)dt.\)
+
+### Identity (from functional equation)  
+\[
+\Re\frac{ζ'}{ζ}(σ+it)
+   =-\Re\frac{ζ'}{ζ}(1-σ+it).                         (4.1)
+\]
+
+### Open Lemma 4 (critical‑line pinning)  
+*Claim.*   For a zero \(s_0=σ_0+it_0\) the condition  
+   \(∂_\sigma L(s_0)=0\) together with (4.1) implies σ₀ = ½.
+
+*Explanation.*   Using (4.1) splits the 2π integral into two signed halves.
+   To finish the proof one must show that the average value  
+   \(\Re ζ'/ζ(σ_0+it_0)\) keeps the **same sign** as σ₀−½.
+   A detailed bound on local contributions of γ‑type terms is still needed.
+
+If Lemma 4 is proved, the strict convexity (3.1) makes σ₀=½ the only
+σ‑stationary point on that t‑line; hence every zero lies on the
+critical line.
 
 ------------------------------------------------------------
-7.  Edge Checks
+5  Conditional Main Theorem
 ------------------------------------------------------------
-* Trivial zeros (σ≤0) untouched.
-* β∈(0,1) keeps L finite near σ→1.
-* Z′/Z = −Σ p^−σ log p bounded on 0<σ<1.
+*If* Open Lemma 2 *and* Open Lemma 4 hold, then IC ⇒ RH.
 
 ------------------------------------------------------------
-Summary
-    IC predicts RH because any off‑line zero would reveal an avoidable
-    global compression imbalance, violating SUR.  RH thus serves as a
-    definitive falsification test for Informational Constructivism.
+6  Falsifiability checkpoints
+------------------------------------------------------------
+* **RH check.** A zero off the line refutes RH and, *a fortiori*, IC.  
+* **Coding check.** Find a compressor beating arithmetic SUR **or**
+  prove the σ Z′/Z term cannot be discarded ⇒ Open Lemma 2 fails ⇒ IC fails.  
+* **Geometry check.** Disprove Lemma 4 by sign analysis of ζ′/ζ ⇒ IC fails.
+
+------------------------------------------------------------
+7  Summary
+------------------------------------------------------------
+IC supplies a plausible equilibrium potential once Open Lemma 2 is proved.
+Analytic geometry of ζ′/ζ almost pins zeros to σ = ½; Open Lemma 4 is the
+unfinished piece.  Proving either open lemma—or producing a counter‑example—
+will decide whether IC actually forces the Riemann Hypothesis.
+
