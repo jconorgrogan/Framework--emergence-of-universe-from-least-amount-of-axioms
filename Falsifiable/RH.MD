@@ -1,4 +1,6 @@
 INFORMATIONAL CONSTRUCTIVISM ⇒ RIEMANN HYPOTHESIS
+
+
 Weirdly enough RH gives a path to falsification of IC here
 ===========================================================
 ------------------------------------------------------------
